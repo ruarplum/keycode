@@ -8,27 +8,48 @@
     <link rel="stylesheet" href="main.css">
 
 </head>
-    <body>
-        <div class="display">
-            <table class="table hide">
-                <thead>
-                    <tr>
-                        <th>Key Code</th>
-                        <th>Key</th>
-                    </tr>
-                </thead>
-                <tbody class="table-body">
-                </tbody>
-            </table>
-            <div class="wrap">
-                <p class="keycode-display"></p>
-                <p class="text-display">Press any key to get the JavaScript event keycode</p>
-                <div>
 
-                </div>
-            </div>
+<body>
+    <div class="page-display">
+        <div class="first-page">
+            <p class="intro-text">Press a key to 
+                see the event keycode</p>
         </div>
 
-        <script src="/projects/keycode/app.js"></script>
-    </body>
+        <div class="cards">
+            <div class="event-titles">
+                <div class="event-key-title">
+                    <p>event.key</p>
+                </div>
+                <div class="event-code-title">
+                    <p>event.code</p>
+                </div>
+                <div class="event-which-title">
+                    <p>event.which</p>
+                </div>
+            </div>
+            <div class="event-results">
+                <p class="result key-result"></p>
+                <p class="result code-result"></p>
+                <p class="result which-result"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/projects/keycode/app.js"></script>
+</body>
 </html>
+
+<!-- <div class="card keycode-display">
+    <p class="keycode-info"></p>
+</div>
+<div class="card event-key">
+    <p class="event-card"></p>
+</div>
+<div class="card event-code">
+    <p class="eventCode-info"></p>
+</div>
+<div class="card event-which">
+    <p class="eventWhich-info"></p>
+</div> -->
