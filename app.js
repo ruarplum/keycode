@@ -1,35 +1,42 @@
-const body = document.querySelector("body");
-const firstPage = document.querySelector(".first-page");
 const introText = document.querySelector(".intro-text");
-const eventTitles = document.querySelector(".event-titles");
-// const eventKeyResult = document.querySelector(".key-result");
-// const eventCodeResult = document.querySelector(".code-result");
-// const eventWhichResult = document.querySelector(".which-result");
+const keyTitle = document.querySelector(".keyTitle");
+const codeTitle = document.querySelector(".codeTitle");
+const whichTitle = document.querySelector(".whichTitle");
 
 document.addEventListener("keydown", (event) => {
-    console.log(event);
-    firstPage.style.display = "none";
+    
+    // let keyResult.textContent = event.key;
     
     let eventKeyResult = event.key;
-    console.log(eventKeyResult);
-
-    let eventCodeResult = event.code;
-    console.log(eventCodeResult);
-
-    let eventWhichResult = event.which;
-    console.log(eventWhichResult)
+    keyTitle.textContent = "event.key"
 
     let paraKey = document.querySelector(".keyResult");
     paraKey.textContent = eventKeyResult;
+    
 
+    
+    let eventCodeResult = event.code;
+    codeTitle.textContent = "event.code";
+
+    let eventWhichResult = event.which;
+    whichTitle.textContent = "event.which";
+
+
+    
+    
     let paraCode = document.querySelector(".codeResult");
     paraCode.textContent = eventCodeResult;
 
+    paraCode
+
+    // whichResult.textContent = eventWhichResult;
     let paraWhich = document.querySelector(".whichResult");
     paraWhich.textContent = eventWhichResult;
+
+    // introText.textContent = eventWhichResult;
 });
 
-// console.log(paraKey);
-// console.log(paraCode);
-// console.log(paraWhich);
-// .KeyResult.textContent = ""
+// // I guess I meant more along the lines of 
+// paraWhich.textContent = event.which 
+// or even 
+// document.querySelector(".whichResult").textContent = event.which
